@@ -1,0 +1,120 @@
+.chatInfoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatHeadersContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mainHeader {
+  font-weight: 600;
+  font-size: 20.0278px;
+  line-height: 37px;
+  text-decoration-line: underline;
+  margin: 0px 14.3px;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
+.secondaryHeader {
+  font-weight: 500;
+  font-size: 20.0278px;
+  line-height: 37px;
+  opacity: 0.6;
+  cursor: pointer;
+  margin: 0px 14.3px;
+}
+
+.filterIcon {
+  margin-left: 103.4px;
+  width: 17.8px;
+  height: 17.8px;
+  opacity: 0.8;
+}
+
+.chatDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14.3px;
+}
+
+.chatDetailsMsg {
+  width: 310px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  padding-left: 19px;
+  color: #666666;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.image {
+  width: 29.47px;
+  height: 29.47px;
+  border-radius: 50%;
+  margin-left: -2px;
+}
+
+.chatLink {
+  color: #fc8019;
+  text-decoration: underline;
+}
+
+.chatBoxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatBoxDateContainer {
+  display: flex;
+  align-items: center;
+  margin: 0px 14.3px;
+}
+
+.chatBoxDate {
+  font-weight: 400;
+  font-size: 13.071px;
+  line-height: 150%;
+  color: #666666;
+  padding: 0px 15px;
+}
+
+.hr {
+  width: 133px;
+  height: 1px;
+}
+
+.chatBoxNotifications {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14.3px;
+  margin-top: 7px;
+}
+
+.chatBoxTime {
+  font-weight: 400;
+  font-size: 13.071px;
+  line-height: 150%;
+  color: #666666;
+  padding-left: 26px;
+}
+
+.chatBox {
+  width: 421px;
+  height: 440px;
+  /* background: #f4f5fc; */
+  background: white;
+  border-radius: 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
