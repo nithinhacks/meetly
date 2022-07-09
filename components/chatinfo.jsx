@@ -1,7 +1,36 @@
-import { AiOutlineFilter } from "react-icons/ai";
+import { AiOutlineFilter, AiOutlineSend } from "react-icons/ai";
+import { useState } from "react";
 import styles from "../styles/Chatinfo.module.css";
+import Message from "./message";
 
 function Chatinfo({ images: { data } }) {
+  const [messages, setMessages] = useState([
+    {
+      text: "Hello",
+      sender: "emanuel",
+      time: "12:00",
+      avatar: "https://reqres.in/img/faces/10-image.jpg",
+    },
+  ]);
+  const handleClick = (e) => {
+    if (message === "") return;
+    e.preventDefault();
+    setMessages([
+      ...messages,
+      {
+        text: message,
+        sender: "emanuel",
+        time: "12:00",
+        avatar: "https://reqres.in/img/faces/10-image.jpg",
+      },
+    ]);
+    setMessage("");
+  };
+  const [message, setMessage] = useState("");
+  const handleChange = (e) => {
+    setMessage(e.target.value);
+  };
+
   return (
     <div className={styles.chatInfoContainer}>
       <div className={styles.chatHeadersContainer}>
@@ -86,7 +115,31 @@ function Chatinfo({ images: { data } }) {
             <p className={styles.chatBoxTime}>13:54</p>
           </div>
         </div>
-        <div className={styles.chatBox}></div>
+        <div className={styles.chatBox}>
+          {messages.map((item, index) => (
+            <Message
+              key={index}
+              text={item.text}
+              sender={item.sender}
+              time={item.time}
+              avatar={item.avatar}
+            />
+          ))}
+        </div>
+        <div className={styles.chatBoxInputContainer}>
+          <textarea
+            className={styles.chatBoxInput}
+            value={message}
+            onChange={handleChange}
+          />
+          <button
+            type="submit"
+            className={styles.chatBoxButton}
+            onClick={handleClick}
+          >
+            <AiOutlineSend className={styles.chatBoxIcon} />
+          </button>
+        </div>
       </div>
     </div>
   );

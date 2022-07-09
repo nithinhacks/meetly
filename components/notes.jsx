@@ -22,7 +22,12 @@ function Notes({ images: { data } }) {
           {data.map(
             (item, index) =>
               index < 2 && (
-                <img className={styles.image} src={item.avatar} alt="avatar" />
+                <img
+                  className={styles.image}
+                  src={item.avatar}
+                  alt="avatar"
+                  key={item.id}
+                />
               )
           )}
         </div>

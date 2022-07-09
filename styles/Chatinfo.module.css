@@ -1,6 +1,7 @@
 .chatInfoContainer {
   display: flex;
   flex-direction: column;
+  margin: 0px 50px;
 }
 
 .chatHeadersContainer {
@@ -111,10 +112,57 @@
 .chatBox {
   width: 421px;
   height: 440px;
-  /* background: #f4f5fc; */
-  background: white;
+  background: #f4f5fc;
+  /* background: white; */
   border-radius: 10px;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.chatBoxInputContainer {
+  position: relative;
+  width: 421px;
+  height: 54px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.chatBoxInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 88%;
+  height: 54px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 20px;
+  padding: 20px 20px;
+  resize: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+.chatBoxButton {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 54px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0px 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.chatBoxIcon {
+  width: 18px;
+  height: 18px;
 }
