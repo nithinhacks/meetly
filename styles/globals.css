@@ -644,6 +644,8 @@ i.chevron-down {
   top: 0;
   bottom: 0;
   cursor: pointer;
+  background-color: #333;
+  border-radius: 50%;
 }
 
 .link-editor .link-input a {

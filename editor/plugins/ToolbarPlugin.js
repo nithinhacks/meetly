@@ -1,3 +1,18 @@
+import {
+  AiOutlineAlignCenter,
+  AiOutlineAlignLeft,
+  AiOutlineAlignRight,
+  AiOutlineBold,
+  AiOutlineCode,
+  AiOutlineDown,
+  AiOutlineItalic,
+  AiOutlineLink,
+  AiOutlineRedo,
+  AiOutlineStrikethrough,
+  AiOutlineUnderline,
+  AiOutlineUndo,
+} from "react-icons/ai";
+import { BsJustify } from "react-icons/bs";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -545,7 +560,7 @@ export default function ToolbarPlugin() {
         className="toolbar-item spaced"
         aria-label="Undo"
       >
-        <i className="format undo" />
+        <AiOutlineUndo style={{ fontSize: 18 }} />
       </button>
       <button
         disabled={!canRedo}
@@ -555,7 +570,7 @@ export default function ToolbarPlugin() {
         className="toolbar-item"
         aria-label="Redo"
       >
-        <i className="format redo" />
+        <AiOutlineRedo style={{ fontSize: 18 }} />
       </button>
       <Divider />
       {supportedBlockTypes.has(blockType) && (
@@ -569,7 +584,7 @@ export default function ToolbarPlugin() {
           >
             <span className={"icon block-type " + blockType} />
             <span className="text">{blockTypeToBlockName[blockType]}</span>
-            <i className="chevron-down" />
+            <AiOutlineDown style={{ fontSize: 18 }} />
           </button>
           {showBlockOptionsDropDown &&
             createPortal(
@@ -603,7 +618,7 @@ export default function ToolbarPlugin() {
             className={"toolbar-item spaced " + (isBold ? "active" : "")}
             aria-label="Format Bold"
           >
-            <i className="format bold" />
+            <AiOutlineBold style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -612,7 +627,7 @@ export default function ToolbarPlugin() {
             className={"toolbar-item spaced " + (isItalic ? "active" : "")}
             aria-label="Format Italics"
           >
-            <i className="format italic" />
+            <AiOutlineItalic style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -621,7 +636,7 @@ export default function ToolbarPlugin() {
             className={"toolbar-item spaced " + (isUnderline ? "active" : "")}
             aria-label="Format Underline"
           >
-            <i className="format underline" />
+            <AiOutlineUnderline style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -632,7 +647,7 @@ export default function ToolbarPlugin() {
             }
             aria-label="Format Strikethrough"
           >
-            <i className="format strikethrough" />
+            <AiOutlineStrikethrough style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -641,14 +656,14 @@ export default function ToolbarPlugin() {
             className={"toolbar-item spaced " + (isCode ? "active" : "")}
             aria-label="Insert Code"
           >
-            <i className="format code" />
+            <AiOutlineCode style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={insertLink}
             className={"toolbar-item spaced " + (isLink ? "active" : "")}
             aria-label="Insert Link"
           >
-            <i className="format link" />
+            <AiOutlineLink style={{ fontSize: 18 }} />
           </button>
           {isLink &&
             createPortal(<FloatingLinkEditor editor={editor} />, document.body)}
@@ -660,7 +675,7 @@ export default function ToolbarPlugin() {
             className="toolbar-item spaced"
             aria-label="Left Align"
           >
-            <i className="format left-align" />
+            <AiOutlineAlignLeft style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -669,7 +684,7 @@ export default function ToolbarPlugin() {
             className="toolbar-item spaced"
             aria-label="Center Align"
           >
-            <i className="format center-align" />
+            <AiOutlineAlignCenter style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -678,7 +693,7 @@ export default function ToolbarPlugin() {
             className="toolbar-item spaced"
             aria-label="Right Align"
           >
-            <i className="format right-align" />
+            <AiOutlineAlignRight style={{ fontSize: 18 }} />
           </button>
           <button
             onClick={() => {
@@ -687,7 +702,7 @@ export default function ToolbarPlugin() {
             className="toolbar-item"
             aria-label="Justify Align"
           >
-            <i className="format justify-align" />
+            <BsJustify style={{ fontSize: 18 }} />
           </button>{" "}
         </>
       )}
