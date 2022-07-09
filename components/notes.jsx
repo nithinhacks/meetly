@@ -1,7 +1,7 @@
 import styles from "../styles/Notes.module.css";
 import { ImStack } from "react-icons/im";
 import { AiOutlineEdit, AiOutlineSend } from "react-icons/ai";
-import Lexicaleditor from "../editor/LexicalEditor.js";
+import Lexicaleditor from "../editor/lexicaleditor.js";
 
 function Notes({ images: { data } }) {
   return (
