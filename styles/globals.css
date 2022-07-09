@@ -355,9 +355,9 @@ pre::-webkit-scrollbar-thumb {
   background-color: rgba(150, 150, 150, 0.4);
 }
 
-.emoji.happysmile {
+/* .emoji.happysmile {
   background-image: url(../images/emoji/1F642.png);
-}
+} */
 
 .toolbar {
   display: flex;
@@ -488,7 +488,7 @@ i.chevron-down {
   display: inline-block;
   height: 8px;
   width: 8px;
-  background-image: url(../images/icons/chevron-down.svg);
+  /* background-image: url(../images/icons/chevron-down.svg); */
 }
 
 #block-controls button:hover {
@@ -507,7 +507,7 @@ i.chevron-down {
   margin: 2px;
 }
 
-#block-controls span.block-type.paragraph {
+/* #block-controls span.block-type.paragraph {
   background-image: url(../images/icons/text-paragraph.svg);
 }
 
@@ -533,7 +533,7 @@ i.chevron-down {
 
 #block-controls span.block-type.code {
   background-image: url(../images/icons/code.svg);
-}
+} */
 
 .dropdown {
   z-index: 5;
@@ -633,7 +633,7 @@ i.chevron-down {
 }
 
 .link-editor div.link-edit {
-  background-image: url(../images/icons/pencil-fill.svg);
+  /* background-image: url(../images/icons/pencil-fill.svg); */
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
@@ -688,7 +688,7 @@ i.chevron-down {
   vertical-align: -0.25em;
 }
 
-i.undo {
+/* i.undo {
   background-image: url(../images/icons/arrow-counterclockwise.svg);
 }
 
@@ -766,4 +766,4 @@ i.right-align {
 
 i.justify-align {
   background-image: url(../images/icons/justify.svg);
-}
+} */
